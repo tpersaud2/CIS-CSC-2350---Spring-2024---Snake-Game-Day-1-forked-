@@ -1,6 +1,6 @@
 import "./App.css";
 import "./App.css";
-// import Snake from "./Snake.ts";
+import Snake from "./Snake";
 import display from "./display";
 import { useEffect } from "react";
 
@@ -10,6 +10,14 @@ export default function App() {
     // Include your display statements to test below
     document.getElementById("output")!.innerText = "OUTPUT:\n";
     display("hey");
+    const snake1 = new Snake();
+    snake1.move(3);
+    display(snake1.position);
+    snake1.move(2);
+    display(snake1.position);
+    snake1.turn();
+    snake1.move(1);
+    display(snake1.position);
   }, []);
   return (
     <div className="App">
