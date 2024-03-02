@@ -10,7 +10,7 @@ export default function App() {
     // Include your display statements to test below
     document.getElementById("output")!.innerText = "OUTPUT:\n";
     display("hey");
-    const snake1 = new Snake();
+    const snake1 = new Snake("green");
     snake1.move(3);
     display(snake1.position);
     snake1.move(2);
