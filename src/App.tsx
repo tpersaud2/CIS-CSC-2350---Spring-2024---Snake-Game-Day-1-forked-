@@ -15,8 +15,11 @@ export default function App() {
     display(snake1.position);
     snake1.move(2);
     display(snake1.position);
-    snake1.turn();
+    snake1.turnLeft();
     snake1.move(1);
+    display(snake1.position);
+    snake1.turnRight();
+    snake1.move(10);
     display(snake1.position);
   }, []);
   return (

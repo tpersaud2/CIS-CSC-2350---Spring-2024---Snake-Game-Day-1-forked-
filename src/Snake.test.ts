@@ -1,5 +1,12 @@
 import Snake from "./Snake";
 
+const blueSnake = new Snake("blue");
+blueSnake.move(5);
+blueSnake.turnLeft();
+blueSnake.move(4);
+blueSnake.turnRight();
+blueSnake.move(3);
+
 /*const moveSnakes = (times: number, turn: boolean = false) => {
   const greenSnake = new Snake("green");
   const maroonSnake = new Snake("maroon");
